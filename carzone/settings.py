@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-d+!#on%#o4p7t)dwf3zjj(43f2pk=5=n2u!s94s9_qi03vln2l'
+SECRET_KEY = '##########################################################'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -77,10 +77,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'carzone_db',
-        'USER': 'postgres',
-        'PASSWORD': 'moises.4002',
-        'HOST': 'localhost',
-        'PORT': '8000',
+        'USER': '#########',
+        'PASSWORD': '########',
+        'HOST': '########',
+        'PORT': '#######',
     }
 }
 
