@@ -87,6 +87,8 @@ ul {
     color: #fff;
 }
 
+
+
 .linkedin-bg {
     background: #0177b5;
     color: #fff;
@@ -120,6 +122,11 @@ ul {
 .google-bg:hover {
     background: #dc4e41;
     color: #fff;
+}
+
+.whatsapp-bg:hover {
+    background: #06e03d !important;
+    color: #fff !important;
 }
 
 .rss-bg:hover {
@@ -9766,6 +9773,13 @@ a.nav-link.active{
 
 .tabbing-box .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
   color: #fff !important;
+}
+
+.touch-btn:hover{
+    background-color:  #FA8072;
+    color: #fff;
+    border: solid 2px #a92222;
+    transition: .5s ease-in-out !important;
 }
 
 

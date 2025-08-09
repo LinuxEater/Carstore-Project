@@ -1,12 +1,18 @@
 from django.shortcuts import render
+from datetime import datetime
 from .models import Team
 
 # Create your views here.
 
 def home(request):
+    now = datetime.now()
     teams = Team.objects.all()
+    day_of_week = now.strftime('%A') 
+    hour = now.strftime('%H:%M')
     context = {
-        'teams': teams
+        'teams': teams,
+        'day_of_week': day_of_week,
+        'hour': hour,
     }
     return render(request, 'pages/home.html', context)
 
@@ -22,3 +28,6 @@ def about(request):
         'teams': teams
     }
     return render(request, 'pages/about.html', context)
+
+def cars(request):
+    return render(request, 'pages/cars.html')  # Assuming you have a template for cars
