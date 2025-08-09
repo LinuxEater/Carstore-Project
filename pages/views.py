@@ -29,5 +29,3 @@ def about(request):
     }
     return render(request, 'pages/about.html', context)
 
-def cars(request):
-    return render(request, 'pages/cars.html')  # Assuming you have a template for cars
