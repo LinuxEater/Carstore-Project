@@ -7,6 +7,8 @@ from .models import Team
 
 def home(request):
     featured_cars = Car.objects.filter(is_featured=True)
+    lasted_cars = Car.objects.all()
+    first_six = lasted_cars[:6]
     now = datetime.now()
     teams = Team.objects.all()
     day_of_week = now.strftime('%A') 
@@ -14,6 +16,7 @@ def home(request):
     context = {
         'teams': teams,
         'day_of_week': day_of_week,
+        'first_six': first_six,
         'featured_cars': featured_cars,
         'hour': hour,
     }
